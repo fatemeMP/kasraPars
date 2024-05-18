@@ -1,0 +1,251 @@
+    /* tailwind custom variable color */
+
+    /* For rgb(255 115 179 / <alpha-value>) */
+    /* --color-primary: 255 115 179; */
+
+    /* For hsl(198deg 93% 60% / <alpha-value>) */
+    /* --color-primary: 198deg 93% 60%; */
+
+    /* For rgba(255, 115, 179, <alpha-value>) */
+    /* --color-primary: 255, 115, 179; */
+
+
+    :root {
+        /*  */
+
+        --green-primary-color: #007041;
+        --tw-green-primary-color:0 112 65;
+        --blue-primary-color: #096cd5;
+        --tw-blue-primary-color: 9 108 213;
+        --pink-primary-color: #a50570;
+        /* --pink-primary-color: #f15694; */
+        --tw-pink-primary-color: 165 5 112;
+        --primary-color: var(--green-primary-color);
+        --tw-primary-color: 0 112 65;
+        /*  */
+
+        --default-radius: 1rem;
+        --bg-color: #ffffff;
+        --tw-bg-color: 255 255 255;
+        --layer-bg-color: #f0f0f0;
+        --layer-bg-color-hovered: #e5e5e5;
+        --faded-secondary-color: #036aa11f;
+        --faded-text: #5050502e;
+        --text-color: #333333;
+        --tw-text-color: 51 51 51;
+        --tw-ascend-color: 105 105 115;
+        --tw-descend-color: 255 255 255;
+        --primary-color-hovered: #368866;
+        --secondary-color: #0369a1;
+        --tw-secondary-color: 3 105 161;
+        --link-color: #007041;
+        --success-color: rgb(39, 116, 0);
+        --tw-success-color: 39 116 0;
+        --faded-success-color: rgb(39, 116, 0, 0.1);
+        --warning-color: #faad14;
+        --tw-warning-color: 250 173 20;
+        --faded-warning-color: #faad141f;
+        --error-color: #f5222d;
+        --tw-error-color: 245 34 45;
+        --faded-error-color: #f5222d1f;
+        --error-color-hovered: #ee4750;
+        --heading-color: #333;
+        --text-color-secondary: rgba(0, 0, 0, 0.65);
+        --disabled-color: rgba(0, 0, 0, 0.25);
+        --border-color-base: rgb(230, 230, 230);
+        --tw-border-color-base: 230 230 230;
+        --input-bg-color: #fcfcfc;
+        --opposite-text-color: rgb(245, 245, 245);
+        --table-even-row: rgb(255, 255, 255);
+        --table-odd-row: rgb(245, 245, 245);
+        --table-hovered-row: rgb(230, 230, 230);
+        --table-error-row: rgb(252, 233, 233);
+        --scroll-thumb-color: #dadada;
+        --body-bg: rgb(245, 245, 247);
+        --tw-body-bg: 245 245 247;
+        --highlight-color: #ffc069;
+        --tw-highlight-color: 255 192 105;
+        
+    }
+
+    [color-scheme="dark"] {
+         /*  */
+        --green-primary-color: #42b988;
+        --tw-green-primary-color: 66 185 136;
+        --blue-primary-color: #7db7f4;
+        --tw-blue-primary-color:  125 183 244;
+        --pink-primary-color: #ffa1df;
+        --tw-pink-primary-color: 249 126 208;
+        --primary-color: var(--green-primary-color);
+        --tw-primary-color: 66 185 136;
+
+         /*  */
+        --secondary-color: #52baf1;
+        --tw-secondary-color: 82 186 241;
+      
+        --bg-color: #3e3e3e;
+        --tw-bg-color: 63 63 63;
+        --text-color: rgb(230, 230, 230);
+        --tw-text-color: 230 230 230;
+        --tw-ascend-color: 240 240 240;
+        --tw-descend-color: 0 0 0;
+        --faded-text: #d5d3d375;
+        --body-bg: #282828;
+        --tw-body-bg: 40 40 40;
+        --border-color-base: #282828;
+        --tw-border-color-base: 40 40 40;
+        --input-bg-color: rgb(59, 59, 59);
+        --layer-bg-color: #585858;
+        --layer-bg-color-hovered: #656565;
+        --opposite-text-color: #202020;
+        --text-color-secondary: rgb(180, 180, 180);
+        --success-color: #52c41a;
+        --tw-success-color: 82 196 26;
+        --faded-success-color: #52c41a1f;
+        --error-color: #fa5b5b;
+        --tw-error-color: 250 91 91;
+        --faded-error-color: #fa5b5b1f;
+        --faded-secondary-color: #52baf11f;
+        --table-even-row: #393939;
+        --table-odd-row: #404040;
+        --table-hovered-row: rgb(71, 71, 71);
+        --scroll-thumb-color: #656565a2;
+        --table-error-row: #553a3a;
+        --highlight-color: #ffc069;
+        --tw-highlight-color: 255 192 105;
+    }
+
+
+
+    @media print {
+        [color-scheme="dark"] {
+            --bg-color: #fff;
+            --text-color: #535353;
+            --border-color-base: #575757;
+            --table-even-row: #ffffff;
+            --table-odd-row: #ffffff;
+            --table-hovered-row: #ffffff;
+        }
+
+        [color-scheme="light"] {
+            --bg-color: #fff;
+            --text-color: #535353;
+            --border-color-base: #575757;
+            --table-even-row: #ffffff;
+            --table-odd-row: #ffffff;
+            --table-hovered-row: #ffffff;
+        }
+    }
+
+
+
+
+    /* default  */
+    /* :root {
+        --default-radius: 1rem;
+        --bg-color: #ffffff;
+        --tw-bg-color: 255 255 255;
+        --layer-bg-color: #f0f0f0;
+        --layer-bg-color-hovered: #e5e5e5;
+        --faded-primary-color: #0071421f;
+        --faded-text: #5050502e;
+        --text-color: #333333;
+        --tw-text-color: 51 51 51;
+        --tw-ascend-color: 105 105 115;
+        --tw-descend-color: 255 255 255;
+        --primary-color: #007041;
+        --tw-primary-color: 0 112 65;
+        --primary-color-hovered: #368866;
+        --secondary-color: #0369a1;
+        --tw-secondary-color: 3 105 161;
+        --faded-secondary-color: #036aa11f;
+        --link-color: #007041;
+        --success-color: rgb(39, 116, 0);
+        --tw-success-color: 39 116 0;
+        --faded-success-color: rgb(39, 116, 0, 0.1);
+        --warning-color: #faad14;
+        --tw-warning-color: 250 173 20;
+        --faded-warning-color: #faad141f;
+        --error-color: #f5222d;
+        --tw-error-color: 245 34 45;
+        --faded-error-color: #f5222d1f;
+        --error-color-hovered: #ee4750;
+        --heading-color: #333;
+        --text-color-secondary: rgba(0, 0, 0, 0.65);
+        --disabled-color: rgba(0, 0, 0, 0.25);
+        --border-color-base: rgb(230, 230, 230);
+        --tw-border-color-base: 230 230 230;
+        --input-bg-color: #fcfcfc;
+        --opposite-text-color: rgb(245, 245, 245);
+        --table-even-row: rgb(255, 255, 255);
+        --table-odd-row: rgb(245, 245, 245);
+        --table-hovered-row: rgb(230, 230, 230);
+        --table-error-row: rgb(252, 233, 233);
+        --table-success-row: rgb(233, 252, 235);
+        --table-info-row: rgb(233, 233, 252);
+        --scroll-thumb-color: #dadada;
+        --body-bg: rgb(245, 245, 247);
+        --tw-body-bg: 245 245 247;
+        --highlight-color: #ffc069;
+        --tw-highlight-color: 255 192 105;
+    }
+
+    [color-scheme="dark"] {
+        --primary-color: #42b988;
+        --tw-primary-color: 66 185 136;
+        --secondary-color: #52baf1;
+        --tw-secondary-color: 82 186 241;
+        --faded-primary-color: #42b9881f;
+        --bg-color: #3e3e3e;
+        --tw-bg-color: 63 63 63;
+        --text-color: rgb(230, 230, 230);
+        --tw-text-color: 230 230 230;
+        --tw-ascend-color: 240 240 240;
+        --tw-descend-color: 0 0 0;
+        --faded-text: #d5d3d375;
+        --body-bg: #282828;
+        --tw-body-bg: 40 40 40;
+        --border-color-base: #282828;
+        --tw-border-color-base: 40 40 40;
+        --input-bg-color: rgb(59, 59, 59);
+        --layer-bg-color: #585858;
+        --layer-bg-color-hovered: #656565;
+        --opposite-text-color: #202020;
+        --text-color-secondary: rgb(180, 180, 180);
+        --success-color: #52c41a;
+        --tw-success-color: 82 196 26;
+        --faded-success-color: #52c41a1f;
+        --error-color: #fa5b5b;
+        --tw-error-color: 250 91 91;
+        --faded-error-color: #fa5b5b1f;
+        --faded-secondary-color: #52baf11f;
+        --table-even-row: #393939;
+        --table-odd-row: #404040;
+        --table-hovered-row: rgb(71, 71, 71);
+        --scroll-thumb-color: #656565a2;
+        --table-error-row: #553a3a;
+        --highlight-color: #ffc069;
+        --tw-highlight-color: 255 192 105;
+    }
+
+
+
+    @media print {
+        [color-scheme="dark"] {
+            --bg-color: #fff;
+            --text-color: #535353;
+            --border-color-base: #575757;
+            --table-even-row: #ffffff;
+            --table-odd-row: #ffffff;
+            --table-hovered-row: #ffffff;
+        }
+
+        [color-scheme="light"] {
+            --bg-color: #fff;
+            --text-color: #535353;
+            --border-color-base: #575757;
+            --table-even-row: #ffffff;
+            --table-odd-row: #ffffff;
+            --table-hovered-row: #ffffff;
+        }
+    } */

@@ -1,0 +1,371 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* tailwind custom classnames */
+
+@layer components {
+    .selectable-text {
+        @apply cursor-pointer text-t-secondary-color;
+    }
+
+    .selectable-text:hover {
+        @apply underline
+    }
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/iranyekanwebboldfanum.woff') format('woff');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/iranyekanwebthinfanum.woff') format('woff');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/iranyekanweblightfanum.woff') format('woff');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/iranyekanwebregularfanum.woff') format('woff');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/iranyekanwebmediumfanum.woff') format('woff');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/iranyekanwebextraboldfanum.woff') format('woff');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 850;
+    src: url('../fonts/iranyekanwebblackfanum.woff') format('woff');
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/iranyekanwebextrablackfanum.woff') format('woff');
+}
+
+html,
+body {
+    /* background-color: var(--bg-color) !important; */
+    background-color: var(--body-bg) !important;
+    color: var(--text-color);
+    font-size: 14px;
+
+}
+
+
+
+body,
+html {
+    font-family: iranyekan !important;
+    /* scroll-behavior: smooth; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: rtl;
+    color: var(--text-color);
+
+}
+
+svg {
+    vertical-align: initial !important;
+}
+
+*:not(font) {
+    border-color: var(--border-color-base);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    /* transition: color 0.3s linear, background-color 0.3s linear, border-color 0.3s linear; */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.inherit-color *,
+.color-inherit * {
+    color: inherit !important;
+}
+
+.direction-ltr * {
+    direction: ltr !important;
+}
+
+.direction-rtl,
+.direction-rtl * {
+    direction: rtl !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+#branchOwner_password {
+    text-security: disc;
+    -webkit-text-security: disc;
+    -moz-text-security: disc;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: 20px;
+    border: 7px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scroll-thumb-color);
+}
+
+
+/* label {
+     font-size: 14px !important;
+ } */
+
+.rtl-grid {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+
+/* .t-table-actions-cell {
+    color: var(--primary-color);
+    max-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & * {
+        font-size: 17px !important;
+         :hover {
+            cursor: pointer;
+        }
+    }
+} */
+
+#transportationTariffCreate_price {
+    text-align: left !important;
+    direction: rtl !important;
+}
+
+.rmdp-container {
+    width: 100% !important;
+}
+
+.css-1okebmr-indicatorSeparator {
+    display: none;
+}
+
+.react-select__value-container {
+    padding: 0px 8px !important;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.skeleton-box {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--default-radius);
+    @apply bg-t-ascend-color/5
+}
+
+.skeleton-box::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.1) 20%, var(--faded-text) 50%, rgba(255, 255, 255, 0.1) 80%, rgba(255, 255, 255, 0));
+    animation: shimmer 2s infinite;
+    content: '';
+}
+
+.sr-only {
+    display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input[type='password']:focus,
+.ant-input-affix-wrapper>input.ant-input:focus:-webkit-autofill,
+.ant-input-affix-wrapper>input.ant-input:focus:-webkit-autofill:hover,
+.ant-input-affix-wrapper>input.ant-input:focus:-webkit-autofill:active,
+.ant-input-affix-wrapper>input.ant-input:focus:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px var(--input-bg-color) inset !important;
+    -webkit-text-fill-color: var(--text-color) !important;
+}
+
+*::placeholder {
+    color: var(--text-color-secondary) !important;
+}
+
+
+/* toastify */
+
+.Toastify__toast-container--bottom-center {
+    left: 200px !important;
+
+    @media (max-width: 480px) {
+        left: 0 !important;
+    }
+}
+
+
+/* date picker */
+
+.rmdp-day.rmdp-range * {
+    color: #fff !important;
+}
+
+@media print {
+
+
+
+    input,
+    button,
+    select,
+    textarea,
+    form,
+    label {
+        display: none !important;
+    }
+
+    /* * {
+        font-size: 10px !important;
+        padding: 1px !important;
+        margin: 0 !important;
+    } */
+
+
+
+}
+
+@page {
+    size: A4;
+    margin: 20mm 20mm;
+
+
+}
+
+.red-table-row,
+.red-table-row * {
+    background-color: var(--table-error-row) !important;
+}
+
+.green-table-row,
+.green-table-row * {
+    background-color: var(--table-success-row) !important;
+}
+
+.blue-table-row,
+.blue-table-row * {
+    background-color: var(--table-info-row) !important;
+}
+
+@keyframes scale-animation {
+    from {
+        scale: 0;
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+.animate-scale {
+    animation: scale-animation 0.3s forwards ease-in-out;
+}
+
+.rmdp-wrapper {
+    border-radius: 1rem !important;
+}
+
+
+
+
+
+.break-word-childeren * {
+    word-break: break-word !important;
+}
+
+/* toastify */
+
+.Toastify .Toastify__toast-body div {
+    font-family: iranyekan !important;
+    direction: rtl;
+    color: var(--text-color);
+
+}
+
+.Toastify__toast {
+    color: var(--text-color);
+    background-color: var(--bg-color) !important;
+}
+
+.Toastify * {
+    font-family: iranyekan !important;
+}
+
+.t-card {
+    @apply rounded-t-default bg-t-ascend-color/5 dark:bg-t-ascend-color/5;
+}
+
+
+.react-flow__attribution {
+    display: none !important;
+}
